@@ -1,12 +1,9 @@
 package web.model;
 
 public class Car {
-    private String model;
-    private Integer release;
-    private Integer price;
-
-    public Car() {
-    }
+    private final String model;
+    private final Integer release;
+    private final Integer price;
 
     public Car(String model, Integer release, Integer price) {
         this.model = model;
@@ -18,23 +15,11 @@ public class Car {
         return model;
     }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
-
     public Integer getRelease() {
         return release;
     }
 
-    public void setRelease(Integer release) {
-        this.release = release;
-    }
-
     public Integer getPrice() {
         return price;
-    }
-
-    public void setPrice(Integer price) {
-        this.price = price;
     }
 }
